@@ -1,0 +1,5 @@
+<ul class="pagination">
+    <ng-template ngFor let-item [ngForOf]="createRange()" let-currentElementIndex="(index + 1)">
+    <li class="pageItem" (click)=onChangePage($event,item)><a id="{{item}}">{{item}}</a></li>
+    </ng-template>
+    </ul>

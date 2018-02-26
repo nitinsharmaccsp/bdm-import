@@ -1,0 +1,56 @@
+<div class="row">
+  
+  <div class="col-sm-12">
+      <label><u>You Are Viewing</u></label>
+      <table class="table tableBorder">
+          <thead class="font-smaller">
+            <tr>
+              <th></th>
+              <th>Subscriber ID</th>
+              <th>Member Party ID</th>
+              <th>Member Name</th>
+              <th>Group Number</th>
+              <th>Section Number</th>
+              <th>Account Number</th>
+              <th>SSN</th>
+              <th>Relationship</th>
+              <th>Gender</th>
+              <th>DOB</th>
+              <th>Plan Period</th>
+              <th>Benefit Period</th>
+              <th>Network Type</th>
+              <th>Accum Type</th>
+            </tr>
+          </thead>
+          <tbody class="font-smaller">
+              <ng-template ngFor let-item [ngForOf]="searchListResults" let-currentElementIndex="(index + 1)">
+            <tr>
+              <td><input type="checkbox" value="ALL"/></td>
+              <td>{{item.subscriberId}}</td>
+              <td>{{item.memberPartyId}}</td>
+              <td>{{item.memberName}}</td>
+              <td>{{item.groupNumber}}</td>
+              <td>{{item.sectionNumber}}</td>
+              <td>{{item.accountNumber}}</td>
+              <td>{{item.ssn}}</td>
+              <td>{{item.relationship}}</td>
+              <td>{{item.gender}}</td>
+              <td>{{item.dob}}</td>
+              <td>   
+                  <table-dropdown [dropdownList]="planPeriodFilters"></table-dropdown>
+              </td>
+              <td>  
+                  <table-dropdown [dropdownList]="benefitPeriodFilters"></table-dropdown>                  
+             </td>
+             <td>   
+                <table-dropdown [dropdownList]="networkTypeFilters"></table-dropdown>                                  
+            </td>
+            <td>
+                <table-dropdown [dropdownList]="accumTypeFilters"></table-dropdown>                                              
+            </td>
+            </tr>
+            </ng-template>
+          </tbody>
+        </table>
+  </div>
+</div>

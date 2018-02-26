@@ -1,0 +1,18 @@
+<div class="row pillHeader">
+  <div class="col-sm-12 ">
+    <ul class="nav nav-pills">
+      <li class="margin-right-18">
+        <img src="assets/house.png">
+      </li>
+      <li *ngFor="let item of tabs" class="li-border" (click)="activateLink(item)" [class.active]="item.active" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="{{item.active}}" ><a [routerLink]="[item.url]">{{item.name}}</a></li>
+      <li class="floatRight">
+        <span class="glyphicon" [class.glyphicon-minus]="classChanged" [class.glyphicon-plus]="!classChanged" data-toggle="collapse"></span>
+      </li>
+    </ul>
+  </div>
+  <div class="col-sm-12">
+  <div id="search" class="collapse lightGrey">
+    <app-member-accums-search></app-member-accums-search>
+  </div>
+</div>
+</div>

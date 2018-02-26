@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-sm-12">
+      <label class="shiftRight"><u>{{global.fileSelect}}</u></label>
+  </div>
+</div>
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-1">
+      <span>File Name:</span>
+  </div>
+  <div class="col-sm-10">
+    <inputComponent class="inputClass" [inputData]="fileUpload"></inputComponent>
+  </div>
+</div>
+<div class="row marginTop marginLeft">
+<div class="col-sm-2"></div>
+<div class="col-sm-10">
+  <form class="form-horizontal">
+        <div class="form-group formdata">
+          <label for="file-upload" class="custom-file-upload">
+            {{global.browseButton}}
+          </label>
+          <input #fileUploadPath id="file-upload" accept=".xlsx, .xls " (change)="fileChangeEvent($event)"   type="file"/> 
+       </div>
+      </form>
+      <app-modal *ngIf="!isFileValid" [modelinput]="modeltransfer"></app-modal>
+    </div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+  <label class="font-smaller">Plan Period</label>
+<table-dropdown [selectCheckbox]=true [dropdownList]="planPeriodFilters"></table-dropdown>
+</div>
+<div class="col-sm-6">
+      <label class="font-smaller">Benefit Period</label>
+  <table-dropdown [selectCheckbox]=false [dropdownList]="benefitPeriodFilters"></table-dropdown>
+</div>
+</div>
+<div class="row">
+      <div class="col-md-11 button">
+          <button #load type="button" class=" btn btn-default  pull-right custom-file-upload " data-toggle="modal" data-target="#myModal" [disabled]="loadDisabled" (click)="uploadFile()">Load</button>
+        </div>
+
+</div>
+
+

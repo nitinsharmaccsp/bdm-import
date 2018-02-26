@@ -1,0 +1,18 @@
+<div class="dropdown" *ngIf="selectCheckbox">
+  <div class=" dropdowns dropdown-toggle"  data-toggle="dropdown">Select
+  <span class="dropdownCaret"></span></div>
+  
+  <ul class="dropdown-menu" >
+    <li><input type="checkbox" [(ngModel)]="isAllChecked.selected" (change)="selectAll($event,dropdownList,isAllChecked);"  /><span>All</span></li>
+    <li class="modal_line"></li> 
+    <li *ngFor="let item of dropdownList;let i=index;">
+     <input type="checkbox" name="item.name[{{i}}]"  value="item.selected" [(ngModel)]="item.selected" (change)="checkIfAllSelected($event,dropdownList,isAllChecked);"/>{{item.name}}
+    </li>  
+  </ul>
+</div>
+<div class="dropdown" *ngIf="!selectCheckbox">
+      <select>  
+                  <option *ngIf="multipleValues">Select</option>
+                  <option *ngFor="let prod of dropdownList">{{prod.name}} </option>  
+      </select> 
+</div>

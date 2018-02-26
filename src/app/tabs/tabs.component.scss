@@ -1,0 +1,51 @@
+.pillHeader{
+    background-color: #F2F2F2;
+    border: 0.5px solid grey;
+    margin-bottom: 1%;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.li-border{
+    border: 0.5px solid;
+    border-radius: 4px;
+    margin-right: 11px;
+    height: 28px;
+    line-height: 1.2;
+    width:223px;
+    text-align: center
+}
+.nav>li>a {
+    position: relative;
+    padding: 10px 15px;
+    line-height: 6px;
+    color: black;
+}
+.home-logo{
+    font-size: xx-large;
+}
+.lightGrey{
+    background-color: #F2F2F2;
+    margin-top: 3%;
+}
+
+.nav-pills>li>a, .nav-pills>li>a:focus, .nav-pills>li>a:hover{
+    background-color: transparent;
+}
+.floatRight{
+    float:right;
+}
+.margin-right-18{
+    margin-right: 18px;    
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: black;
+    background-color:#BFBFBF !important;
+    height: 27px !important;
+}
+.act {
+    background-color: grey;
+    border : 1px solid grey;
+}
+a {
+    color : black;
+}

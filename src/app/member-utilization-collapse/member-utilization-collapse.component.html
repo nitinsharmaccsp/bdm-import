@@ -1,0 +1,11 @@
+<div>
+    <div class="clickable" (click)="isExpanded=!isExpanded">
+      <i class="fa fa-plus-square-o" aria-hidden="true"  *ngIf="!isExpanded"></i>
+      <i class="fa fa-minus-square-o" aria-hidden="true" *ngIf="isExpanded"></i>
+      <span *ngIf="!isFamily"> {{member.name}} (Member Party ID : {{member.partyId}} )</span>
+      <span *ngIf="isFamily"> Family (Subscriber ID : {{member.subscriberId}} )</span>
+    </div>
+      <div *ngIf="isExpanded">
+              <utilization-table></utilization-table>
+      </div>
+    </div>

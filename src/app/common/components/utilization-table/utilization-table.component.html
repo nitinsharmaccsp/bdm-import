@@ -1,0 +1,45 @@
+
+    <table class="table table-bordered">
+        <thead class="table-header">
+            <tr>
+                <th *ngFor="let header of columns">{{header}}</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr *ngFor="let row of memberUtilizationObject?.innDeductible; index as i; first as isFirst">
+                <td class="middle-valign"
+                 [attr.rowspan]="memberUtilizationObject?.innDeductible?.length+1"
+                 *ngIf="isFirst">
+                    INN Deductible
+                </td>
+                <td>{{row.period}}</td>
+                <td>{{row.planPeriodUtilization}}</td>
+                <td>{{row.planPeriodLimit}}</td>
+                <td>{{row.accumsRemaining}}</td>
+                <td class="no-background" ><input type="checkbox"></td>                
+            </tr>
+              <tr>
+                <td>Total Benefit Period till date</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td>$0</td>
+                <td class="no-background" ><input type="checkbox"></td>                
+            </tr>
+            <tr *ngFor="let row of memberUtilizationObject?.oonDeductible; index as i; first as isFirst">
+                <td class="middle-valign" [attr.rowspan]="memberUtilizationObject?.oonDeductible?.length+1"
+                 *ngIf="isFirst">OON Deductible</td>
+                <td>{{row.period}}</td>
+                <td>{{row.planPeriodUtilization}}</td>
+                <td>{{row.planPeriodLimit}}</td>
+                <td>{{row.accumsRemaining}}</td>
+                <td class="no-background" ><input type="checkbox"></td>
+            </tr>
+              <tr>
+                <td>Total Benefit Period till date</td>
+                <td>$1000</td>
+                <td>$1000</td>
+                <td>$0</td>
+                <td class="no-background" ><input type="checkbox"></td>                
+            </tr>
+        </tbody>
+    </table>

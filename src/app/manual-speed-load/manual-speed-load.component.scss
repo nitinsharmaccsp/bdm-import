@@ -1,0 +1,62 @@
+.formdata{
+  margin-bottom: 250px;
+}
+input[type='file'] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 22px;
+    font-weight: 500;
+    line-height: 0.7;
+    position: relative;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    font-size: 11px;
+    width: 130px;
+    text-align: center;
+    &[disabled] {
+    cursor : not-allowed;    
+    }
+} 
+.marginTop{
+    margin-top: 1% !important;
+}
+.marginLeft{
+    margin-left: 2% !important;
+}
+.loadButton{
+    width: 12%;
+    height: 20px;
+    line-height: 0;
+    margin-right: 2%;
+}
+.shiftRight {
+    margin-left : 46px;
+}
+.custom-file-upload[disabled] {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    height: 22px;
+    font-weight: 500;
+    line-height: 0.7;
+    position: relative;
+    border-radius: 3px;
+    background-color: #F2F2F2;
+    font-size: 11px;
+    width: 130px;
+    text-align: center;
+    cursor : not-allowed;
+} 
+
+:host ::ng-deep input[type="text"] {
+    border-radius: 4px;
+    box-shadow: none;
+    border: 0.5px solid grey;
+    padding-left: 2px;
+    }

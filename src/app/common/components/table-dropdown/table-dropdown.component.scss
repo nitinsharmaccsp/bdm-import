@@ -1,0 +1,26 @@
+.dropdowns{
+    background-color: transparent;
+    border: 0.5px solid;
+    width: 70px !important;
+    text-align: center;
+    cursor: pointer;
+    height: 18px;
+    font-size : 12px;
+}
+.dropdownCaret{
+    float: right;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    /* margin-left: 2px; */
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid\9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    /* top: -5px; */
+    margin-top: 7px;
+    margin-right: 2px;
+    /* text-align: center; */
+    /* cursor: pointer; */
+}

@@ -1,0 +1,80 @@
+<div class="row font-size-smaller">
+  <div class="col-sm-2
+  "></div>
+  <div class="col-sm-1 width-9">Subscriber Id<span>*</span></div>
+  <div class="col-sm-2">
+    
+      <table-dropdown [selectCheckbox]=true [dropdownList]="planPeriodFilters"></table-dropdown>
+      
+  </div>
+  <div class="col-sm-1 width-9">Member DOB</div>
+  <div class="col-sm-2">
+    <table-dropdown [selectCheckbox]=false [dropdownList]="benefitPeriodFilters"></table-dropdown>
+  </div>
+  <div class="col-sm-1 width-9">Section Number</div>
+  <div class="col-sm-2">
+      <inputComponent [inputData]="sectionNumber"></inputComponent>
+  </div>
+  <div class="col-sm-1">
+  </div>
+</div>
+<div class="row font-size-smaller">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-1 width-9">Group Number</div>
+  <div class="col-sm-2">
+    <inputComponent [inputData]="groupNumber"></inputComponent>
+  </div>
+  <div class="col-sm-1 width-9">State Code</div>
+  <div class="col-sm-2">
+    <inputComponent [inputData]="stateCode"></inputComponent>
+  </div>
+  <div class="col-sm-1 width-9">Account Number</div>
+  <div class="col-sm-2">
+      <inputComponent [inputData]="accountNumber"></inputComponent>
+  </div>
+  <div class="col-sm-1 width-9"></div>
+</div>
+<div class="row font-size-smaller margin-top-13">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-1 width-9">Member F Name</div>
+  <div class="col-sm-2">
+    <inputComponent [inputData]="memberFName"></inputComponent>
+  </div>
+  <div class="col-sm-1 width-9">Gender</div>
+  <div class="col-sm-2">
+    <div class="form-group">
+      <select class="form-input" id="gender">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </div>
+    
+    
+  </div>
+  <div class="col-sm-1 width-9">SSN</div>
+  <div class="col-sm-2">
+      <inputComponent [inputData]="ssn"></inputComponent>
+  </div>
+  <div class="col-sm-1"></div>
+</div>
+<div class="row font-size-smaller margin-top-6">
+  <div class="col-sm-2"></div>
+  <div class="col-sm-1 width-9">Member L Name</div>
+  <div class="col-sm-2">
+    <inputComponent [inputData]="memberLName"></inputComponent>
+  </div>
+  <div class="col-sm-1 width-9">Relationship</div>
+  <div class="col-sm-2">
+      <div class="form-group">
+          <select class="form-input" id="gender">
+            <option>Dependent</option>
+            <option>Subscriber</option>
+          </select>
+        </div>
+  </div>
+  <div class="col-sm-1 width-9"></div>
+  <div class="col-sm-2">
+      <button type="submit" class="btn ">Search</button>
+  </div>
+  <div class="col-sm-1"></div>
+</div>

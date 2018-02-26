@@ -1,0 +1,17 @@
+.modal-body{
+    max-height: 300px;
+    overflow: auto;
+}
+.modal-top{
+    top: 125px;
+    border: 10px solid;
+    width: 296px;
+    border-color: #A4A4A4;
+}
+.modal-dialog .modal-content{
+    border-radius: 0px;
+    text-align: center;
+}
+.closeButton{
+    margin-bottom: 4%;
+}

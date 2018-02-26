@@ -1,0 +1,30 @@
+:host {
+  font-size : 12px;
+}
+.table-header {
+  background-color:rgba(1,12,109,0.92);
+  color:rgb(251,246,246);
+}
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > th,
+.table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+.table-bordered > tbody > tr > td,
+.table-bordered > tfoot > tr > td {
+   border: 1px solid #fff;
+}
+.table-body {
+  background-color: #f7f7f7;
+}
+
+.middle-valign {
+    vertical-align: middle;
+    text-align: center;
+}
+.no-background {
+    background: #fff;
+}
+.table>thead>tr>th {
+  vertical-align: bottom;
+  font-size: smaller !important;
+}
